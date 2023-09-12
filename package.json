@@ -6,7 +6,9 @@
   "scripts": {
     "test": "playwright test",
     "test:debug": "playwright test --headed",
-    "report": "npx playwright show-report"
+    "report": "npx playwright show-report",
+    "format": "prettier ./ --write --list-different",
+    "lint": "prettier ./ --check"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +16,8 @@
   "dependencies": {
     "@playwright/test": "1.37.1",
     "dotenv": "16.3.1"
+  },
+  "devDependencies": {
+    "prettier": "3.0.3"
   }
 }
