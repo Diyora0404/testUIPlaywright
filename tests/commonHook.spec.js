@@ -3,7 +3,7 @@ import {logIn} from "../common/log-in";
 
 test.describe('Common', () => {
     test.beforeEach(async ({ page }) => {
-        await logIn(page, 'diyoraabd04@gmail.com', 'job0404di')
+        await logIn(page, 'diyoraabd04@gmail.com', '***0404di')
 
     })
     test('Navigation', async ({ page }) => {
