@@ -1,5 +1,5 @@
 const {test, expect} = require('@playwright/test')
-
+import LoginPage from "../../pages/loginPage";
 test.describe('Authentication & Authorization', () => {
   test('Sign in with existing credentials', async ({page}) => {
     await page.goto('https://coding.pasv.us/user/login')
@@ -15,8 +15,9 @@ test.describe('Authentication & Authorization', () => {
     await page.locator('#normal_login_password').fill('job0404')
     await page.locator('button[type="submit"]').click()
     //expect(page.locator('.ant-notification-notice-error'))
+
     const toast = page.locator('.ant-notification-notice-message')
-    await expect(toast).toBeVisible()
-    await expect(toast).toHaveText('User login. Fail')
+    await expect(loginPage.toast).toBeVisible()
+    await expect(loginPage.toast).toHaveText('User login. Fail')
   })
 })
