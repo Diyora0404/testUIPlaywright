@@ -1,5 +1,5 @@
 const {test, expect} = require('@playwright/test')
-import LoginPage from "../../pages/loginPage";
+import LoginPage from '../../pages/loginPage'
 test.describe('Authentication & Authorization', () => {
   test('Sign in with existing credentials', async ({page}) => {
     await page.goto('https://coding.pasv.us/user/login')

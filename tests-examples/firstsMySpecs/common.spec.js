@@ -1,5 +1,5 @@
 import {test, expect} from '@playwright/test'
-import {logIn} from '../../common/log-in'
+import {logIn} from '../../common/log-in-with-api'
 
 test.describe('Common', () => {
   test.beforeEach(async ({page}) => {

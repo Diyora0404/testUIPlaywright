@@ -1,13 +1,11 @@
 //test.describe('Authentication & Authorization', () => {
-  // let loginPage
-  // test.beforeEach(async ({page}) => {
-  //   //await page.goto('/user/login')
-  //   loginPage = new LoginPage(page)
-  //   await loginPage.open()
+// let loginPage
+// test.beforeEach(async ({page}) => {
+//   //await page.goto('/user/login')
+//   loginPage = new LoginPage(page)
+//   await loginPage.open()
 
-    //fixtures заменяет это наптсание функций или вызов page  test.js
-
-
+//fixtures заменяет это наптсание функций или вызов page  test.js
 
 import {test, expect} from '../common/test'
 

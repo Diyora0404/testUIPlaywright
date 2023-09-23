@@ -1,4 +1,4 @@
-import Page from "./page";
+import Page from './page'
 export default class LoginPage extends Page {
   constructor(page) {
     super(page) //вызов конструктора класса  родителя класса page
@@ -11,8 +11,9 @@ export default class LoginPage extends Page {
       submit: page.locator('button[type="submit"]'),
     }
   }
-//actions:
-  async open() { //add await if want so in test...
+  //actions:
+  async open() {
+    //add await if want so in test...
     return this.page.goto('/user/login')
   }
 
